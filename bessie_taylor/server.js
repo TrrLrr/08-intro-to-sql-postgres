@@ -7,7 +7,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 3000;
 const app = express();
-const connectionString = 'postgres://localhost:5432'
+const connectionString = 'postgres://postgres:bessie@localhost:5432/'
 const client = new pg.Client(connectionString);
 
 // REVIEW: Use the client object to connect to our DB.
